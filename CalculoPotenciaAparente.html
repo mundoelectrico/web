@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="Estilos.css">
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- JQUERY -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <title>CALCULOS ELECTRICOS</title>
+
+</head>
+<body>
+
+      <!-- Content here -->
+ 
+  
+    <header >
+      <h1 class="Titulo">CALCULOS ELECTRICOS</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="navbar-brand"><a class="nav-link active" aria-current="page" href="index.html">CONDUCTORES</a></li>
+            <li class="navbar-brand"><a class="nav-link active" aria-current="page" href="Canalizacion.html">CANALIZACION</a></li>
+            <li class="navbar-brand"><a class="nav-link active" aria-current="page" href="Breakers.html">BREAKERS</a></li>
+            <li class="navbar-brand"><a class="nav-link active" aria-current="page" href="#">CONSULTA RAPIDA</a>
+              <ul>
+                <li><a href="ConsultaConductores.html"> Capacidad Conductores      </a></li>
+                <li><a href="CalculoCorriente.html"> Cálculo Corriente Carga    </a></li>
+                <li><a href="CalculoPotenciaAparente.html"> Cálculo Potencia Aparente </a></li>
+                <li><a href="#"> Corrección Factor Potencia </a></li>
+                <li><a href="#"> Conversion Unidades        </a></li>
+            </li>
+          </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <br><center><h2 class="Titulo">CALCULO POTENCIA</h2></center><br>
+  
+    <div id="Contenedor" class="Contenedor">
+    
+      <div class="container text-center">
+        <div class="row row-cols-3">
+
+          <div class="col">
+          </div>
+
+          <div class="col">
+            <table class="table table-borderless">
+              <tbody>
+                <tr>
+                  <td></td>
+                </tr>
+                   
+                <tr >  
+                  <td><span class="Letra"><strong>Potencia a Cálcular</strong></td>
+                   <td >
+                    <select id="UnidadPotencia" class="form-select" aria-label="Default select example">
+                      <option value="VA" selected>Potencia Aparente</option>
+                      <option value="VA"   >Potencia Aparente </option>
+                      <option value="Watts">Potencia Activa   </option>
+                      <option value="Var"  >Potencia Reactiva </option>
+                     </select>
+                  </td>
+                  </td>
+                  <td><span id="TipoPotencia" class="Letra"><strong>VA</strong></span></td>
+                </tr>
+
+                <tr>
+                  <td><strong>Opción 1</strong></td>
+                  <td>    
+                    <div class="form-check"><input id="Opcion1" class="form-check-input" type="checkbox" value="" >
+                      <span id="Label1" ><strong>P(Watts) y Q(Var)</strong></span>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+ 
+                <tr>
+                  <td><strong>Opción 2</strong></td>
+                  <td>    
+                    <div class="form-check"><input id="Opcion2" class="form-check-input" type="checkbox" value="" >
+                      <span id="Label2"> <strong>P(Watts) y Factor Potencia</strong> </span>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>                
+
+                <tr>
+                  <td><strong>Opción 3</strong></td>
+                  <td>    
+                    <div class="form-check"><input  id="Opcion3" class="form-check-input" type="checkbox" value="" >
+                    <span id="Label3"> <strong>Q(Var) y Factor Potencia</strong></span>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>  
+
+                <tr>  
+                  <td><span id="Valor11" class="Letra"><strong>P</strong></span></td>
+                  <td> <input type="number" class="form-control" id="PrimerInput" required></td>
+                  <td><span id="Valor12" class="Letra"><strong>Watts</strong></span></td>
+                </tr>
+              
+                <tr>  
+                  <td><span id="Valor21" class="Letra"><strong>Q</strong></span></td>
+                  <td> <input type="number" class="form-control" id="SegundoInput" required></td>
+                  <td><span id="Valor22" class="Letra"><strong>Var</strong></span></td>
+ 
+                  </td>
+                </tr>             
+<br>
+                <tr>
+                  <td></td>
+                </tr>
+
+             
+              </tbody>
+
+            </table>
+
+            <div id="Resultado" class="alert alert-info" role="alert">
+              A simple info alert—check it out!
+            </div>
+
+            <div id="Alerta" class="alert alert-danger" role="alert">
+              Debe introducir el valor de Voltaje!
+            </div>  
+
+            <button type="button" id="BotonCalcular" class="btn btn-primary">CALCULAR</button>
+          
+          </div>
+    
+          <div class="col">
+          </div>
+        
+        </div>
+      </div>
+
+    </div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./CalculoPotenciaAparente.js"></script>
+
+
+  </body>
+
+</html>
