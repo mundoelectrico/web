@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="Estilos.css">
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- JQUERY -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">   
+
+
+    <title>CALCULOS ELECTRICOS</title>
+
+    <script type="text/javascript" data-cfasync="false">
+      /*<![CDATA[/* */
+      (function(){var d=window,o="f3c740c3a172a3d500eb64a7360dd3f7",f=[["siteId",815-958*176-7+5287812],["minBid",0],["popundersPerIP","0:5"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","never"]],g=["d3d3LmJldHRlcmFkc3lzdGVtLmNvbS9uY29va2llcy5taW4uY3Nz","ZDJrazBvM2ZyN2VkMDEuY2xvdWRmcm9udC5uZXQvVm4vZ3JpcHBsZS5taW4uanM="],k=-1,z,j,r=function(){clearTimeout(j);k++;if(g[k]&&!(1748089915000<(new Date).getTime()&&1<k)){z=d.document.createElement("script");z.type="text/javascript";z.async=!0;var i=d.document.getElementsByTagName("script")[0];z.src="https://"+atob(g[k]);z.crossOrigin="anonymous";z.onerror=r;z.onload=function(){clearTimeout(j);d[o.slice(0,16)+o.slice(0,16)]||r()};j=setTimeout(r,5E3);i.parentNode.insertBefore(z,i)}};if(!d[o]){try{Object.freeze(d[o]=f)}catch(e){}r()}})();
+      /*]]>/* */
+      </script>
+
+</head>
+<body class="Fondo">
+
+<!--Barra de navegación-->
+<nav class="navbar">
+  <div class="contenedornav">
+   <div class="logo"><img class="Imagenlogo" src="Imagenes/Logo.bmp" alt=""></div>
+   <ul class="nav-list">
+      <li><a id="Enlace1"   href="index.html">CONDUCTORES</a></li>
+      <li><a id="Enlace2"   href="Canalizacion.html">CANALIZACION</a></li>
+      <li><a id="Enlace3"   href="Breakers.html">BREAKERS</a></li>
+      <li><a id="Enlace4"   href="Tablas.html">TABLAS</a></li>
+      <li><a id="Enlace5"   href="ConsultaConductores.html">CONSULTA CABLES</a></li>
+      <li><a id="openPopup">ACERCA DE</a></li>
+    </ul>
+
+   <!-- El popup -->
+   <div id="popup" class="popup">
+    <center>
+      <div class="popup-content">
+        <span class="close-btn" id="closePopup">&times;</span>
+        <h2>Acerca de</h2>
+        <br>
+        <p> <strong>CALCULADORA MUNDO ELECTRICO</strong></p>
+        <p> VERSION BETA</p>
+        <p> Fecha Lanzamiento: 03/08/2024</p>
+        <p> Contacto:</p>
+        <div class="redes-sociales">
+          <a href="https://www.facebook.com/MundoElectrico80/" target="_blank"><img class="IconRedesPop" src="Imagenes/274791_facebook_social network_icon.png" alt=""></i></a>
+          <a href="https://www.youtube.com/@mundoelectrico80" target="_blank" ><img class="IconRedesPop" src="Imagenes/341094_youtube_icon.png" alt=""></i></a>
+          <a href="https://wa.me/18292918680" target="_blank"><img class="IconRedesPop" src="Imagenes/pngtree-whatsapp-icon-png-image_3584844.jpg" alt=""></i></a>
+        </div>
+  
+      </div></center>
+   </div> 
+   <!-- Fin popup -->
+
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </div>
+</nav>
+
+ <!--Menú Hamburguesa -->
+<div class="mobile-menu">
+  <ul class="mobile-nav-list">
+    <li><a href="index.html">CONDUCTORES</a></li>
+    <li><a href="Canalizacion.html">CANALIZACION</a></li>
+    <li><a href="Breakers.html">BREAKERS</a></li>
+    <li><a href="Tablas.html">TABLAS</a></li>
+    <li><a href="ConsultaConductores.html">CONSULTA CABLES</a></li>
+  </ul>
+</div>
+<!--Fin Menú Hamburguesa -->
+
+
+    <br><center><h2 class="Titulo">CALIBRE CONDUCTORES</h2></center><br>
+  
+
+<!--Tabla Capacidad de Corriente -->
+
+    <div class="ContenedorColumnas">
+      <div class="Columna1">
+      </div>
+     
+      <div class="ColumnaCanalizacion">
+        <div>
+           <center><h3>Tabla Capacidad de Corriente</h3></center>
+        </div>
+        <div>
+          <img  class="ImagenesVideos" src="Imagenes/Capacidad Amperios.bmp" alt="">
+        </div>
+      </div>
+       
+       <div class="Columna2">
+      </div>
+    </div>
+    
+    <br>
+    <br>
+
+
+<!--Tabla Correción por Agrupamiento -->
+
+<div class="ContenedorColumnas">
+  <div class="Columna1">
+  </div>
+ 
+  <div class="ColumnaCanalizacion">
+    <div>
+       <center><h3>Tabla Correción por Agrupamiento</h3></center>
+    </div>
+    <div>
+      <img  class="ImagenesVideos" src="Imagenes/Correcion Agrupamiento.bmp" alt="">
+    </div>
+  </div>
+   
+   <div class="Columna2">
+  </div>
+</div>
+
+<br>
+<br>
+
+
+
+  <!--Tabla Reactancia y Resistencia -->
+
+  <div class="ContenedorColumnas">
+    <div class="Columna1">
+     </div>
+    
+     <div class="ColumnaCanalizacion">
+       <div>
+          <center><h3>Tabla Reactancia y Resistencia</h3></center>
+       </div>
+      <div>
+         <img class="TablaImpedancia" src="Imagenes/Tabla 9 NEC R y X.bmp" alt="">
+       </div>
+     </div>
+      
+      <div class="Columna2">
+     </div>
+   </div>
+   
+   <br>
+   <br>  
+
+  <!--Tabla Diametro de Tuberia EMT -->
+
+  <div class="ContenedorColumnas">
+    <div class="Columna1">
+     </div>
+    
+     <div class="ColumnaCanalizacion">
+       <div>
+          <center><h3>Tabla Diametro de Tuberia EMT</h3></center>
+       </div>
+      <div>
+         <img class="TablasTubos" src="Documentacion/Tuberia EMT.bmp" alt="">
+       </div>
+     </div>
+      
+      <div class="Columna2">
+     </div>
+   </div>
+   
+   <br>
+   <br>  
+
+    <!--Tabla Diametro de Tuberia IMC -->
+
+  <div class="ContenedorColumnas">
+    <div class="Columna1">
+     </div>
+    
+     <div class="ColumnaCanalizacion">
+       <div>
+          <center><h3>Tabla Diametro de Tuberia IMC</h3></center>
+       </div>
+      <div>
+         <img class="TablasTubos" src="Documentacion/Tuberia IMC.bmp" alt="">
+       </div>
+     </div>
+      
+      <div class="Columna2">
+     </div>
+   </div>
+   
+   <br>
+   <br>  
+
+  
+   <!--Tabla Diametro de Tuberia RMC -->
+
+  <div class="ContenedorColumnas">
+    <div class="Columna1">
+     </div>
+    
+     <div class="ColumnaCanalizacion">
+       <div>
+          <center><h3>Tabla Diametro de Tuberia RMC</h3></center>
+       </div>
+      <div>
+         <img class="TablasTubos" src="Documentacion/Tuberia RMC.bmp" alt="">
+       </div>
+     </div>
+      
+      <div class="Columna2">
+     </div>
+   </div>
+   
+   <br>
+   <br> 
+   
+
+   <!--Tabla Diametro de Tuberia FMC -->
+
+   <div class="ContenedorColumnas">
+    <div class="Columna1">
+     </div>
+    
+     <div class="ColumnaCanalizacion">
+       <div>
+          <center><h3>Tabla Diametro de Tuberia FMC</h3></center>
+       </div>
+      <div>
+         <img class="TablasTubos" src="Documentacion/Tuberia FMC.bmp" alt="">
+       </div>
+     </div>
+      
+      <div class="Columna2">
+     </div>
+   </div>
+   
+   <br>
+   <br> 
+
+     <!--Tabla Diametro de Tuberia PVC -->
+
+     <div class="ContenedorColumnas">
+      <div class="Columna1">
+       </div>
+      
+       <div class="ColumnaCanalizacion">
+         <div>
+            <center><h3>Tabla Diametro de Tuberia PVC Sch 40</h3></center>
+         </div>
+        <div>
+           <img class="TablasTubos" src="Documentacion/Tuberia PVC Sch 40.bmp" alt="">
+         </div>
+       </div>
+        
+        <div class="Columna2">
+       </div>
+     </div>
+     
+     <br>
+     <br> 
+     <br>
+
+
+     <footer>
+      <div class="contenido">
+          <p>&copy; 2024 MUNDO ELECTRICO - Todos los derechos reservados</p>
+          <div class="redes-sociales">
+              <a href="https://www.facebook.com/MundoElectrico80/" target="_blank"><img class="IconRedes" src="Imagenes/274791_facebook_social network_icon.png" alt=""></i></a>
+              <a href="https://www.youtube.com/@mundoelectrico80" target="_blank" ><img class="IconRedes" src="Imagenes/341094_youtube_icon.png" alt=""></i></a>
+              <a href="https://wa.me/18292918680" target="_blank"><img class="IconRedes" src="Imagenes/pngtree-whatsapp-icon-png-image_3584844.jpg" alt=""></i></a>
+           </div>
+      </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./TablasUtilizadas.js"></script>
+
+  </body>
+
+</html>
