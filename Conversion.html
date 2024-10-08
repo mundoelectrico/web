@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="Estilos.css">
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- JQUERY -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <title>CALCULOS ELECTRICOS</title>
+
+</head>
+<body class="Fondo">
+
+<!--Barra de navegación-->
+
+<nav class="navbar">
+    
+  <div class="contenedor-menu">
+    
+    <img class="Icono" src="./Imagenes/transformador.png" alt="">
+    <button id="hamburguesa" class="abrir-menu"><img style="height: 50px; width: 50px;" src="./Imagenes/menu.png" alt="" ></button>
+    <ul class="menu-horizontal">
+      <li><a href="index.html">Inicio</a></li>
+      <li>
+          <a href="#">Cálculos</a>
+          <ul class="menu-vertical">
+            <li><a href="ConsultaCables.html">Capacidad Conductor</a></li>
+            <li><a href="CalculoCorriente.html">Amperaje Carga</a></li>
+            <li><a href="Canalizacion.html">Diametro Tubería</a></li>
+            <li><a href="CalculoConsumo.html">Consumo Eléctrico</a></li>
+            <li><a href="Conversion.html">Conversión Unidades</a></li>
+          </ul>
+      </li>
+      <li><a href="Tablas.html">Tablas Referencias</a></li>
+      <li><a href="Tutorial.html">Tutoriales</a></li>
+      <li><a href="Acerca-de.html">Acerca de</a></li>
+    </ul>
+
+  </div>
+</nav>
+<!--Fin Barra de navegación-->
+
+ <!--Menú Hamburguesa -->
+
+ <div id="movil-menu" class="movil-menu">
+  <ul class="movil-lista-nav">
+    <li><center><a href="index.html">Principal</a></center></li>
+    <hr size="4px" color="black" />
+    <li><center><a href="ConsultaCables.html">Capacidad Conductor</a></center></li>
+    <hr size="4px" color="black" />
+    <li><center><a href="CalculoCorriente.html">Cálculo Amperaje</a></center></li>
+    <hr size="4px" color="black" />
+    <li><center><a href="Canalizacion.html">Cálculo Tubería Eléctrica</a></center></li>
+    <hr size="4px" color="black" />
+    <li><center><a href="CalculoConsumo.html">Consumo Eléctrico</a></center></li>
+    <hr size="4px" color="black" />
+    <li><center><a href="Conversion.html">Conversión Unidades</a></center></li>
+    <hr size="4px" color="black" />
+    <li><center><a href="Tablas.html">Tablas Referencias</a></center></li>
+    <hr size="4px" color="black" />
+    <li><center><a href="Tutorial.html">Guía de Usuarios</a></center></li>
+  </ul>
+</div>
+
+ <!--Fin Menú Hamburguesa -->
+
+<br><br>       
+<div id="ContenedorTuberia" class="Contenedor">
+             
+  <div id="ColumnaDatos" class="ContenedorColumnas">
+    
+        <div class="Columna1">
+        </div>
+    
+        <div class="ColumnaCanalizacion">
+          <table class="table">
+
+            <div class="Titulo-h2"  style="  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;">
+              <center><h2 class="Titulopricipal"><strong>CONVERSIÓN UNIDADES</strong></h2></center>
+            </div><br>
+
+            <tbody>
+             <tr id="Unidades">  
+                <td><span class="Letra"><strong>Indique Tipo de Unidad</strong></td>
+                 <td >
+                   <select id="TipoUnidad" class="form-select" aria-label="Default select example">
+                     <option value="Potencia" selected>Potencia</option>
+                     <option value="Temperatura">Temperatura</option>
+                     <option value="Longitud">Longitud</option>
+                   </select>
+                </td>
+              </tr>
+
+              <tr>  
+                <td><span class="Letra"><strong>Indique Cantidad</strong></td>
+                 <td ><input type="number" class="form-control" id="Cantidad" required></td>
+              </tr>
+
+              <tr>  
+                <td ></td>
+                <td ></td>
+              </tr>
+
+              <tr id="Potencia">  
+                <td><span class="Letra"><strong>Unidad que se desea Convertir</strong></td>
+                 <td >
+                   <select id="UnidadPotencia" class="form-select" aria-label="Default select example">
+                     <option value="W" selected>W  (Vatios) </option>
+                     <option value="KW"    >KW  (KiloVatios)    </option>
+                     <option value="Hp"    >Hp  (Caballos de Fuerza)   </option>
+                     <option value="BTU/h" >BTU/h  </option>
+                     <option value="Kcal/h">Kcal/h </option>
+                   </select>
+                </td>
+              </tr>
+
+              <tr id="Temperatura">  
+                <td><span class="Letra"><strong>Unidad que se desea Convertir</strong></td>
+                 <td >
+                   <select id="UnidadTemperatura" class="form-select" aria-label="Default select example">
+                     <option value="C" selected>°C </option>
+                     <option value="F">°F</option>
+                     <option value="K">°K</option>
+                   </select>
+                </td>
+              </tr>
+             
+              <tr id="Longitud">  
+                <td><span class="Letra"><strong>Unidad que se desea Convertir</strong></td>
+                 <td >
+                   <select id="UnidadLongitud" class="form-select" aria-label="Default select example">
+                     <option value="m" selected>mts</option>
+                     <option value="Km">Km</option>
+                     <option value="cm">cm</option>
+                     <option value="mm">mm</option>
+                     <option value="Pies">pies</option>
+                     <option value="Pulg">pulg</option>
+                   </select>
+                </td>
+              </tr>
+
+           </tbody>
+         </table>
+
+         <div id="Resultados" class="alert alert-info" role="alert">
+
+            <table >
+              <tbody>
+                <tr>
+                  <td id="Fila1"></td>
+                </tr>
+                <tr>
+                  <td id="Fila2"></td>
+                </tr>
+                <tr>
+                  <td id="Fila3"></td>
+                </tr>
+                <tr>
+                  <td id="Fila4"></td>
+                </tr>
+                <tr>
+                  <td id="Fila5"></td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+         <div id="Alerta" class="alert alert-danger" role="alert">
+            Debe introducir el valor de Voltaje!
+          </div>  
+
+          <center><button type="button" id="Convertir" class="btn btn-primary">CONVERTIR</button></center>
+        </div>  
+        
+         <div class="Columna2">
+        </div>
+      
+      </div>
+
+
+    </div>
+
+
+    <br>
+
+    <br><br><br><br><br><br><br><br>
+
+    <footer>
+      <div class="contenido">
+          <p>&copy; 2024 MUNDO ELECTRICO - Todos los derechos reservados</p>
+          <div class="redes-sociales">
+              <a href="https://www.facebook.com/MundoElectrico80/" target="_blank"><img class="IconRedes" src="Imagenes/274791_facebook_social network_icon.png" alt=""></i></a>
+              <a href="https://www.youtube.com/@mundoelectrico80" target="_blank" ><img class="IconRedes" src="Imagenes/341094_youtube_icon.png" alt=""></i></a>
+              <a href="https://wa.me/18292918680" target="_blank"><img class="IconRedes" src="Imagenes/pngtree-whatsapp-icon-png-image_3584844.jpg" alt=""></i></a>
+           </div>
+      </div>
+    </footer>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Conversion.js"></script>
+
+  </body>
+
+</html>
