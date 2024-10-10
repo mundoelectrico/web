@@ -6,7 +6,6 @@
     document.getElementById("Longitud"   ).hidden = true;
 
     document.getElementById("Resultados").hidden = true;
-    document.getElementById("Alerta"    ).hidden = true;
     document.getElementById("movil-menu").hidden = true;
   
   }); 
@@ -88,6 +87,7 @@ Convertir.addEventListener("click",function(){
     document.getElementById("Fila2").innerHTML = "<strong>"+Valor +" "+ Potencia +" = "    + Resultado[1]+" </strong><br>";
     document.getElementById("Fila3").innerHTML = "<strong>"+Valor +" "+ Potencia +" = "    + Resultado[2]+" </strong><br>";
     document.getElementById("Fila4").innerHTML = "<strong>"+Valor +" "+ Potencia +" = "    + Resultado[3]+" </strong><br>";
+    document.getElementById("Fila5").innerHTML = "<strong> </strong><br>";
 
   }
 

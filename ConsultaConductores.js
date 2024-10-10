@@ -1,7 +1,6 @@
 
 window.addEventListener("load",function(){
 
-  document.getElementById("Alerta").hidden=true;
   document.getElementById("Resultado").hidden=true;
   document.getElementById("CalibreMCM").disabled = true;
 
@@ -167,7 +166,6 @@ BotonBuscar.addEventListener("click",function(){
   var Calibre = Tabla[0];
   var CorrienteTabla = Tabla[1];
 
-  document.getElementById("Alerta"   ).hidden=true;
   document.getElementById("Resultado").hidden=true;
 
   if (Temperatura  == true){ FT = FTemp(TempAmbiente,TipoAislamiento,TipoMaterial); }

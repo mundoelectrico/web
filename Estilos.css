@@ -158,7 +158,9 @@ body {
 
 .EtiquetaResultado {
   color: blue;
+  font-size: x-large;
 }
+
 
 .Videos {
   border-style: inset;
@@ -410,3 +412,15 @@ footer a:hover {
  margin-left: 20%;
  margin-right: 20%;
 }
+
+.cont-datos-personales {
+ display: block;
+ max-width: 300px;
+ background-color: lightgrey;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ margin-bottom: 20px;
+
+ 
+ }
+ 

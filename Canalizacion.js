@@ -106,8 +106,6 @@ OtraLista.addEventListener("click",function(){
       if (Ncond == 2) { AreaMaxima =31 };
       if (Ncond  > 2) { AreaMaxima =40 };
   
-      console.log(AreaMaxima);
-
       const CalculoSeccionOcupada  = Array.of(12);
   
       for (i=0; i<=11; i++) { 
