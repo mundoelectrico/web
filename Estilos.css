@@ -174,7 +174,7 @@ body {
 
 .tabla-agrupamiento {
   display: block;
-  height: 400px;
+  height: 350px;
 }
 
 
@@ -282,7 +282,12 @@ body {
     width: 98%;
    }
 
- 
+   .tabla-agrupamiento {
+    display: block;
+    height: 250px;
+  }
+  
+   
 }
 
 
